@@ -1,2 +1,5 @@
 # angular-alura
-Angular studies
+Angular studies using alura plataform
+
+Link: https://cursos.alura.com.br/formacao-angular
+
