@@ -1,4 +1,3 @@
 <app-new-transfer (onTransfer)="transferIt($event)"></app-new-transfer>
 
-<p>Value: {{transfer?.value}}</p>
-<p>Receiver: {{transfer?.receiver}}</p>
+<app-statement [transfers]="transfers" ></app-statement>

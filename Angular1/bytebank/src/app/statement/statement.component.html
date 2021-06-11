@@ -1,0 +1,19 @@
+<section class="container">
+  <h2 class="titulo">Transferências</h2>
+  <table class="tabela">
+    <thead class="tabela__cabecalho">
+      <th class="tabela__cabecalho__conteudo">Value</th>
+      <th class="tabela__cabecalho__conteudo">Receiver</th>
+      <th class="tabela__cabecalho__conteudo">Date</th>
+    </thead>
+    <tbody>
+      <tr class="tabela__linha" *ngFor="let transfer of transfers">
+        <td class="tabela__conteudo">{{ transfer.value | currency }}</td>
+        <td class="tabela__conteudo">{{ transfer.receiver }}</td>
+        <td class="tabela__conteudo">
+          {{ transfer.transferDate | date: "short" }}
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</section>
