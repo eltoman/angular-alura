@@ -7,8 +7,13 @@ import { Component } from "@angular/core";
 })
 export class NewTransferComponent {
 
+  value!: number;
+  receiver!: string;
+
   transferIt(){
     console.log("New Transfer Requested");
+    console.log('Value: ', this.value);
+    console.log('Receiver: ', this.receiver);
   }
 
 }
