@@ -6,7 +6,7 @@
       <th class="tabela__cabecalho__conteudo">Receiver</th>
       <th class="tabela__cabecalho__conteudo">Date</th>
     </thead>
-    <tbody>
+    <tbody  *ngIf="transfers.length > 0; else emptyList">
       <tr class="tabela__linha" *ngFor="let transfer of transfers">
         <td class="tabela__conteudo">{{ transfer.value | currency }}</td>
         <td class="tabela__conteudo">{{ transfer.receiver }}</td>
@@ -16,4 +16,7 @@
       </tr>
     </tbody>
   </table>
+  <ng-template #emptyList>
+    <p>There's no transfer</p>
+  </ng-template>
 </section>

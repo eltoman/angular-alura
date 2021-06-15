@@ -1,3 +1,4 @@
+import { TransferService } from './../services/transfer.service';
 import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
@@ -7,11 +8,12 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class StatementComponent implements OnInit {
 
-  constructor() { }
+  @Input() transfers: any[] = [];
+
+  constructor(private transferService: TransferService) { }
 
   ngOnInit(): void {
+    this.transfers = this.transferService.transfers;
   }
-
-  @Input() transfers: any[] = [];
 
 }
