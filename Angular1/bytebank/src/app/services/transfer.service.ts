@@ -24,11 +24,11 @@ export class TransferService {
   }
 
   addTransfer(transfer: Transfer) : Observable<Transfer>{
-    this.build(transfer)
+    this.hydrate(transfer)
     return this.httpClient.post<Transfer>(this.url, transfer);
   }
 
-  private build(transfer: any){
+  private hydrate(transfer: any){
     transfer.transferDate = new Date();
   }
 

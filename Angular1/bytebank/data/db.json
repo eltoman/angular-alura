@@ -20,21 +20,9 @@
     },
     {
       "value": 100,
-      "receiver": "Elton",
-      "transferDate": "2021-06-15T22:28:24.821Z",
-      "id": "KMm1OPk"
-    },
-    {
-      "value": 100,
       "receiver": "0001",
       "transferDate": "2021-06-15T22:28:31.880Z",
       "id": "fW0htI6"
-    },
-    {
-      "value": 100,
-      "receiver": "Elton",
-      "transferDate": "2021-06-15T22:46:19.235Z",
-      "id": "HwyAQhO"
     },
     {
       "value": 100,
@@ -43,16 +31,10 @@
       "id": "1d2Sb4A"
     },
     {
-      "value": 500,
-      "receiver": "Gabriela",
-      "transferDate": "2021-06-15T23:07:54.805Z",
-      "id": "nY98nOv"
-    },
-    {
-      "value": 1000000,
-      "receiver": "JP",
-      "transferDate": "2021-06-15T23:08:13.441Z",
-      "id": "7jHib7x"
+      "value": 200,
+      "receiver": "2365-1",
+      "transferDate": "2021-06-19T01:00:17.063Z",
+      "id": "2_vphSO"
     }
   ]
 }
